@@ -4,6 +4,7 @@ import 'package:google_fonts/google_fonts.dart';
 import 'package:learn_x/core/utils/list_icon.dart';
 import 'package:learn_x/core/utils/mediaquery.dart';
 import 'package:learn_x/presentation/finish_screen/finish_screen.dart';
+import 'package:learn_x/presentation/learing_screen.dart/learing_screen.dart';
 import 'package:learn_x/presentation/login_screen/bloc/login_bloc.dart';
 import 'package:learn_x/presentation/wigets/login_screen_widget/common_textfeild.dart';
 import 'package:learn_x/presentation/wigets/login_screen_widget/continue.dart';
@@ -30,7 +31,7 @@ class LoginScreen extends StatelessWidget {
           check = state.check;
         }
         if(state is SignInState){
-          Navigator.push(context,MaterialPageRoute(builder:(context) => FinishScreen(), ));
+          Navigator.push(context,MaterialPageRoute(builder:(context) => LearingScreen(), ));
         }
       },
       builder: (context, state) {

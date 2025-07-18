@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:google_fonts/google_fonts.dart';
+
 import 'package:learn_x/core/theme/bloc/themes_bloc.dart';
-import 'package:learn_x/core/utils/mediaquery.dart';
+
 import 'package:learn_x/presentation/wigets/finish_screen_widget/achievement_text.dart';
 import 'package:learn_x/presentation/wigets/finish_screen_widget/common_divider.dart';
 import 'package:learn_x/presentation/wigets/finish_screen_widget/finish_app_bar.dart';
@@ -12,7 +12,7 @@ import 'package:learn_x/presentation/wigets/finish_screen_widget/perfect_score_w
 import 'package:learn_x/presentation/wigets/finish_screen_widget/quiz_complete_text.dart';
 import 'package:learn_x/presentation/wigets/finish_screen_widget/score.dart';
 import 'package:learn_x/presentation/wigets/finish_screen_widget/trophy_icon.dart';
-import 'package:learn_x/presentation/wigets/login_screen_widget/signin_button.dart';
+
 
 class FinishScreen extends StatelessWidget {
   const FinishScreen({super.key});

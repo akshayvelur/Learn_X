@@ -25,9 +25,9 @@ class AppTheme {
     appBarTheme: AppBarTheme(color: Colors.black87,titleTextStyle: TextStyle(color: (Colors.white))),
     textTheme: const TextTheme(
     bodyLarge: TextStyle(color: Colors.white),
-    bodyMedium: TextStyle(color: Color.fromARGB(179, 255, 255, 255)),
-    titleLarge: TextStyle(color: Color.fromARGB(255, 255, 255, 255)),
-    labelLarge: TextStyle(color: Color.fromARGB(255, 255, 255, 255)),
+    bodyMedium: TextStyle(color: Colors.white),
+    titleLarge: TextStyle(color:  Colors.white),
+    labelLarge: TextStyle(color: Colors.white),
   ),
   
   

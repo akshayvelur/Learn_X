@@ -30,8 +30,12 @@ class MyAppBar extends StatelessWidget {
       ),
       actions: [
       InkWell(onTap: () =>      context.read<ThemesBloc>().add(ModeEvent()),child:isDark? Image.asset("assets/moon.png", height: mediaQueryHeight(context,0.04 ),width: mediaQueryWidth(context, 0.04),):Image.asset("assets/sun.png", height: mediaQueryHeight(context,0.06 ),width: mediaQueryWidth(context, 0.06),)),
-        SizedBox(width: mediaQueryWidth(context, 0.01)),
-        IconButton(onPressed: () {}, icon: Icon(Icons.person)),
+        SizedBox(width: mediaQueryWidth(context, 0.04)),
+          Image.asset(isDark?
+            "assets/young-man.png":"assets/young-man (1).png",
+            width: mediaQueryWidth(context, 0.08),
+            height: mediaQueryHeight(context, 0.08),
+          ),
         SizedBox(width: mediaQueryWidth(context, 0.07)),
       ],
     );
