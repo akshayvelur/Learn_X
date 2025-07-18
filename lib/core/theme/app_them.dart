@@ -12,7 +12,10 @@ class AppTheme {
     bodySmall: TextStyle(color: Color.fromARGB(137, 0, 0, 0)),
     titleLarge: TextStyle(color: Color.fromARGB(255, 0, 0, 0), fontWeight: FontWeight.bold),
     labelLarge: TextStyle(color: Color.fromARGB(255, 0, 0, 0)),
-  ), );
+    
+  ),iconTheme: IconThemeData(color: const Color.fromARGB(255, 0, 0, 0)),
+  iconButtonTheme: IconButtonThemeData(style: ButtonStyle(iconColor:WidgetStatePropertyAll(Colors.black))));
+  
 
   static final ThemeData darkTheme = ThemeData(
     brightness: Brightness.light,
@@ -27,5 +30,8 @@ class AppTheme {
     labelLarge: TextStyle(color: Color.fromARGB(255, 255, 255, 255)),
   ),
   
-  );
-}
+  
+iconTheme: IconThemeData(color: Colors.white), 
+iconButtonTheme: IconButtonThemeData(style: ButtonStyle(iconColor:WidgetStatePropertyAll(Colors.white))));}
+
+
