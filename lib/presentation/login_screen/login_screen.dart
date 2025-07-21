@@ -8,6 +8,7 @@ import 'package:learn_x/presentation/learing_screen.dart/learing_screen.dart';
 import 'package:learn_x/presentation/login_screen/bloc/login_bloc.dart';
 import 'package:learn_x/presentation/wigets/login_screen_widget/common_textfeild.dart';
 import 'package:learn_x/presentation/wigets/login_screen_widget/continue.dart';
+import 'package:learn_x/presentation/wigets/login_screen_widget/dont_have_account.dart';
 import 'package:learn_x/presentation/wigets/login_screen_widget/email_text.dart';
 import 'package:learn_x/presentation/wigets/login_screen_widget/login_logo.dart';
 import 'package:learn_x/presentation/wigets/login_screen_widget/other_login.dart';
@@ -70,10 +71,7 @@ class LoginScreen extends StatelessWidget {
                   SignInButton(),
                   ContinueWith(),
                   OtherLoginMethord(),
-                  Padding(
-                    padding: const EdgeInsets.only(top: 25),
-                    child: Row(mainAxisAlignment: MainAxisAlignment.center,children: [Text("Don't have an account? ",style: GoogleFonts.roboto(color: const Color.fromARGB(255, 128, 127, 127),),),Text("Sign up",style: GoogleFonts.roboto(fontWeight: FontWeight.w500),)],),
-                  )
+                  DontHaveAccount()
                 ],
               ),
             ),

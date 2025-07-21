@@ -14,7 +14,7 @@ class SignInButton extends StatelessWidget {
   Widget build(BuildContext context) {
     return Padding(
       padding: const EdgeInsets.only(top: 7),
-      child: InkWell(onTap: () =>context.read<LoginBloc>().add(SignInEvent()) ,
+      child: InkWell(onTap: () {} ,
         child: Container(
           height: mediaQueryHeight(context, 0.06),
           width: mediaQueryWidth(context, 0.81),

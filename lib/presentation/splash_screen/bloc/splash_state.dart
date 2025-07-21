@@ -5,5 +5,4 @@ abstract class SplashState {}
 
 class SplashInitial extends SplashState {}
 class SplashTimerState extends SplashState{
-  
 }

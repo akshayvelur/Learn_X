@@ -3,6 +3,7 @@ import 'dart:math';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:learn_x/core/utils/list_icon.dart';
 import 'package:learn_x/core/utils/mediaquery.dart';
 import 'package:learn_x/presentation/finish_screen/finish_screen.dart';
 import 'package:learn_x/presentation/learing_screen.dart/bloc/learing_bloc.dart';
@@ -22,18 +23,6 @@ class LearingScreen extends StatefulWidget {
   @override
   State<LearingScreen> createState() => _LearingScreenState();
 }
-
-Map<String, bool> myscore = {};
-final Map<String, String> choice = {
-  "Photosynthesis":
-      "Process of plants use to convert light energy to chemical energy",
-  "Mitosis": "Cell division process that results in two identical cell",
-  "Osmosis": "Movement of water molecules across a semipermeable membrane",
-  "Homostasis":
-      "Maintaining stable internal conditions despite external changes",
-};
-List<String> items = ["Photosynthesis", "Mitosis", "Osmosis", "Homostasis"];
-int seed = 0;
 
 class _LearingScreenState extends State<LearingScreen> {
   @override

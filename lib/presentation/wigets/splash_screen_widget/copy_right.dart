@@ -9,6 +9,9 @@ class CopyRight extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Text("© 2025 LearnX",style: GoogleFonts.roboto(fontSize: 12,fontWeight: FontWeight.w400),);
+    return Padding(
+      padding: const EdgeInsets.only(top: 30),
+      child: Text("© 2025 LearnX",style: GoogleFonts.roboto(fontSize: 12,fontWeight: FontWeight.w400),),
+    );
   }
 }

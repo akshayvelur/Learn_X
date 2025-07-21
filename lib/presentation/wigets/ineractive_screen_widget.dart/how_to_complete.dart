@@ -1,6 +1,7 @@
 
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:learn_x/core/utils/list_icon.dart';
 import 'package:learn_x/core/utils/mediaquery.dart';
 import 'package:learn_x/presentation/learing_screen.dart/learing_screen.dart';
 
@@ -15,14 +16,14 @@ class HowToComplete extends StatelessWidget {
       child: Padding(
         padding: const EdgeInsets.only(top: 10,left: 10,right: 10),
         child: Container(
-          height: mediaQueryHeight(context, .16),
-          width: mediaQueryWidth(context, .89),
+          height: mediaQueryHeight(context,0.16),
+          width: mediaQueryWidth(context, 0.89),
           decoration: BoxDecoration(
             borderRadius: BorderRadius.circular(10),
             color: const Color.fromARGB(69, 158, 158, 158),
           ),
           child: Padding(
-            padding: const EdgeInsets.only(left: 10,top: 10),
+            padding: const EdgeInsets.only(left: 10,top: 10,bottom: 10),
             child: Row(crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Padding(
@@ -44,9 +45,9 @@ class HowToComplete extends StatelessWidget {
                     radius: 10,
                   ),
                 ),
-                Padding(
-                  padding: const EdgeInsets.only(left: 10),
-                  child: Expanded(
+                Expanded(
+                  child: Padding(
+                    padding: const EdgeInsets.only(left: 10),
                     child: Column(mainAxisAlignment: MainAxisAlignment.center,crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
                         Text(

@@ -10,8 +10,8 @@ class AppSubText extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.only(top: 5),
-      child: Text("Interactive Learning Experience",style: GoogleFonts.roboto(fontSize: 13,fontWeight: FontWeight.w400),),
+      padding: const EdgeInsets.only(bottom: 30),
+      child: Text("Interactive Learning Experience",style: GoogleFonts.roboto(fontSize: 17,fontWeight: FontWeight.w400),),
     );
   }
 }

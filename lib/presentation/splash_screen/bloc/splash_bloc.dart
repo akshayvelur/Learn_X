@@ -13,7 +13,9 @@ class SplashBloc extends Bloc<SplashEvent, SplashState> {
 
   FutureOr<void> splashTimerEvent(SplashTimerEvent event, Emitter<SplashState> emit) async{
 
-    await Future.delayed(Duration(seconds: 4));
+    await Future.delayed(Duration(seconds: 3));
     emit(SplashTimerState());
   }
+
+
 }

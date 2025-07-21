@@ -2,6 +2,7 @@ import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:learn_x/core/theme/bloc/themes_bloc.dart';
+import 'package:learn_x/firebase_options.dart';
 import 'package:learn_x/presentation/learing_screen.dart/bloc/learing_bloc.dart';
 import 'package:learn_x/presentation/login_screen/bloc/login_bloc.dart';
 import 'package:learn_x/presentation/splash_screen/bloc/splash_bloc.dart';
@@ -10,7 +11,9 @@ import 'package:provider/provider.dart' show MultiProvider, Provider;
 
 void main()async{
   WidgetsFlutterBinding.ensureInitialized();
-  await Firebase.initializeApp();
+  await Firebase.initializeApp(
+    options: DefaultFirebaseOptions.currentPlatform,
+);
   runApp(const MyApp());
 }
 

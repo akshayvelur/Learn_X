@@ -2,9 +2,11 @@
 import 'dart:developer';
 
 import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:learn_x/core/utils/list_icon.dart';
 import 'package:learn_x/core/utils/mediaquery.dart';
 import 'package:learn_x/domine/google_authentication.dart';
+import 'package:learn_x/presentation/login_screen/bloc/login_bloc.dart';
 import 'package:learn_x/presentation/wigets/splash_screen_widget/logo.dart';
 
 class OtherLoginMethord extends StatelessWidget {
@@ -30,7 +32,7 @@ class OtherLoginMethord extends StatelessWidget {
             child: InkWell(onTap: () {
               
               if(i==0){
-              googleAuthService();
+             context.read<LoginBloc>().add(SignInEvent());
               }
             },
               child: Center(

@@ -7,10 +7,12 @@ import 'package:learn_x/core/theme/bloc/themes_bloc.dart';
 import 'package:learn_x/core/utils/mediaquery.dart';
 import 'package:learn_x/presentation/login_screen/login_screen.dart';
 import 'package:learn_x/presentation/splash_screen/bloc/splash_bloc.dart';
+import 'package:learn_x/presentation/wigets/login_screen_widget/logint.dart';
 import 'package:learn_x/presentation/wigets/splash_screen_widget/app_subtext.dart';
 import 'package:learn_x/presentation/wigets/splash_screen_widget/app_text.dart';
 import 'package:learn_x/presentation/wigets/splash_screen_widget/copy_right.dart';
 import 'package:learn_x/presentation/wigets/splash_screen_widget/logo.dart';
+import 'package:lottie/lottie.dart';
 
 class SplashScreen extends StatefulWidget {
   const SplashScreen({super.key});
@@ -26,11 +28,12 @@ class _SplashScreenState extends State<SplashScreen> {
     // TODO: implement initState
     super.initState();
   }
+
   @override
   Widget build(BuildContext context) {
     bool statu = false;
     return BlocConsumer<SplashBloc, SplashState>(
-      listener: (context,state) {
+      listener: (context, state) {
         if (state is SplashTimerState) {
           Navigator.pushReplacement(context, MaterialPageRoute(builder: (context) => LoginScreen(),));
         }
@@ -38,17 +41,9 @@ class _SplashScreenState extends State<SplashScreen> {
       // TODO: implement listener
       builder: (context, state) {
         return Scaffold(
-          body: Column(crossAxisAlignment: CrossAxisAlignment.center,
-            children: [
-              logo(),
-           AppText() ,
-           AppSubText(),
-           //
-           //add loading lottie
-           //
-           SizedBox(height: 20,)
-           ,
-           CopyRight()],
+          body: Column(
+            crossAxisAlignment: CrossAxisAlignment.center,
+            children: [logo(), AppText(), AppSubText(), Loading(), CopyRight()],
           ),
         );
       },
