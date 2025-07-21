@@ -1,7 +1,11 @@
 
+import 'dart:developer';
+
 import 'package:flutter/material.dart';
 import 'package:learn_x/core/utils/list_icon.dart';
 import 'package:learn_x/core/utils/mediaquery.dart';
+import 'package:learn_x/domine/google_authentication.dart';
+import 'package:learn_x/presentation/wigets/splash_screen_widget/logo.dart';
 
 class OtherLoginMethord extends StatelessWidget {
   const OtherLoginMethord({
@@ -23,11 +27,18 @@ class OtherLoginMethord extends StatelessWidget {
               ),
               borderRadius: BorderRadius.circular(5),
             ),
-            child: Center(
-              child: Image.asset(
-                signIcon[i],
-                width: mediaQueryWidth(context, 0.04),
-                height: mediaQueryHeight(context, 0.04),fit: BoxFit.contain,
+            child: InkWell(onTap: () {
+              
+              if(i==0){
+              googleAuthService();
+              }
+            },
+              child: Center(
+                child: Image.asset(
+                  signIcon[i],
+                  width: mediaQueryWidth(context, 0.04),
+                  height: mediaQueryHeight(context, 0.04),fit: BoxFit.contain,
+                ),
               ),
             ),
           ),

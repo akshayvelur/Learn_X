@@ -32,7 +32,7 @@ class _SplashScreenState extends State<SplashScreen> {
     return BlocConsumer<SplashBloc, SplashState>(
       listener: (context,state) {
         if (state is SplashTimerState) {
-          Navigator.push(context, MaterialPageRoute(builder: (context) => LoginScreen(),));
+          Navigator.pushReplacement(context, MaterialPageRoute(builder: (context) => LoginScreen(),));
         }
       },
       // TODO: implement listener

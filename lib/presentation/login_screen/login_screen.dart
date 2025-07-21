@@ -31,7 +31,7 @@ class LoginScreen extends StatelessWidget {
           check = state.check;
         }
         if(state is SignInState){
-          Navigator.push(context,MaterialPageRoute(builder:(context) => LearingScreen(), ));
+          Navigator.pushReplacement(context,MaterialPageRoute(builder:(context) => LearingScreen(), ));
         }
       },
       builder: (context, state) {

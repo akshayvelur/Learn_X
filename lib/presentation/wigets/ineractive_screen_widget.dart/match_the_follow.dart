@@ -10,7 +10,7 @@ class MatchTheFollowText extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.only(top: 20),
+      padding: const EdgeInsets.only(top: 20,left: 10),
       child: Text("MATCH THE FOLLOWING",style: GoogleFonts.roboto(color: const Color.fromARGB(255, 71, 70, 70)),),
     );
   }

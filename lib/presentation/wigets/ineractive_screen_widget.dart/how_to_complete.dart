@@ -13,7 +13,7 @@ class HowToComplete extends StatelessWidget {
   Widget build(BuildContext context) {
     return Center(
       child: Padding(
-        padding: const EdgeInsets.only(top: 10),
+        padding: const EdgeInsets.only(top: 10,left: 10,right: 10),
         child: Container(
           height: mediaQueryHeight(context, .16),
           width: mediaQueryWidth(context, .89),
@@ -89,7 +89,7 @@ class Emoji extends StatelessWidget {
     return Material(
       color: Colors.transparent,
       child: Padding(
-        padding: const EdgeInsets.all(10),
+        padding: const EdgeInsets.only(top: 10,left: 8,right: 8,bottom: 10),
         child: Container(
           alignment: Alignment.center,
           decoration: BoxDecoration(
